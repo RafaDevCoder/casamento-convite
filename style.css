@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100dvh;
+  padding: 0rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+
+.convite {
+  width: 100%;
+  height: 100%;
+  padding: 0rem 0rem;
+  display: flex;
+}
+
+.post {
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/fundo2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nomes {
+  width: 100%;
+  padding: 0rem 2rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgba(208, 60, 245, 0.7);
+
+
+  & h1 {
+    font-size: 3em;
+    display: flex;
+    margin-top: 20px;
+    color: #ffffff;
+
+  }
+}
+
+
+/* Fundo escuro por trás do popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(208, 60, 245, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Popup em si */
+.popup {
+  width: 300px;
+  height: 400px;
+  background: white;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-top: 40px;
+
+  & p {
+    color: #C443BB;
+  }
+
+  & h2 {
+    font-size: 20px;
+    color: #C443BB;
+  }
+
+}
+
+.btn-x {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: end;
+}
+
+.close-btn {
+  color: #c44c43;
+  font-size: 25px;
+  border: none;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #C443BB;
+}
+
+.popup h2 {
+  margin-bottom: 20px;
+}
+
+/* Botões */
+
+.popup-buttons1 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.popup button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* .close-btn:hover {
+      background-color: #c0392b;
+    }
+      */
+
+.other-btn {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  border: 2px solid #C443BB;
+  color: white;
+  border-radius: 10PX;
+}
+
+.icon {
+  width: 30%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  background-image: url('./img/icon_alegre.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  display: flex;
+  margin-top: 5px;
+}
+
+.icon1 {
+  width: 48px;
+  height: 48px;
+  background-image: url('./img/icon_triste.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  display: flex;
+  margin-top: 5px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  height: 100%;
+
+  & p {
+    color: #C443BB;
+    text-align: center;
+  }
+}
+
+.section {
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.qrcode {
+  width: 50%;
+  height: 100%;
+  background-color: #ff3c00;
+}
+
+@media screen and (width >=320px) {
+  .nomes h1 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-top: 50px
+  }
+}
